@@ -35,7 +35,7 @@ static void handleClient(int sock) {
     else if (rcvd == 0)
         perror("client disconnected without reason");
     else 
-        httpRequest(sock, request);
+        httpRequest(sock, request);                //the self-implemented function is called here
 
     shutdown(sock, SHUT_RDWR);
     close(sock);

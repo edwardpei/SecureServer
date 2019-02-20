@@ -21,5 +21,7 @@ static void binary(int sock, char *fname) {
    }
 }
 
-void httpRequest(int sock, char *request) { }
+void httpRequest(int sock, char *request) {
+	printf("Request content is: %s", request);
+}
 
